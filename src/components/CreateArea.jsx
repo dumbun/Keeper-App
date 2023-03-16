@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import { Add } from "@material-ui/icons";
-import { Fab, Zoom } from "@material-ui/core";
+// import { Add } from "@mui/material/Icon";
+
+import { Fab, Zoom } from "@mui/material";
 
 function CreateArea(props) {
   const [isExpanded, setExpanded] = useState(false);
@@ -53,9 +54,7 @@ function CreateArea(props) {
           rows={isExpanded ? 3 : 1}
         />
         <Zoom in={isExpanded}>
-          <Fab onClick={submitNote}>
-            <Add />
-          </Fab>
+          <Fab onClick={submitNote}>add</Fab>
         </Zoom>
       </form>
     </div>
