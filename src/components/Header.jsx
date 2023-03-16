@@ -1,11 +1,14 @@
-// import { Ballot } from "@material-ui/icons";
+import HowToRegIcon from "@mui/icons-material/HowToReg";
 
 import React from "react";
 
 function Header() {
   return (
     <header>
-      <h1>Keeper</h1>
+      <h1>
+        <HowToRegIcon />
+        Keeper
+      </h1>
     </header>
   );
 }

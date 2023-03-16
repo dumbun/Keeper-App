@@ -1,7 +1,7 @@
 import React from "react";
-// import { Fab, Zoom } from "@material-ui/core";
 
-// import { Delete } from "@material-ui/icons";
+import DeleteIcon from "@mui/icons-material/Delete";
+
 import { Fab, Zoom } from "@mui/material";
 
 function Note(props) {
@@ -14,7 +14,9 @@ function Note(props) {
       <h1>{props.title}</h1>
       <p>{props.content}</p>
       <Zoom in={true}>
-        <Fab onClick={handleClick}>Delete</Fab>
+        <Fab onClick={handleClick}>
+          <DeleteIcon></DeleteIcon>
+        </Fab>
       </Zoom>
     </div>
   );
